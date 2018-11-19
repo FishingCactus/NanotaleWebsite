@@ -29,7 +29,7 @@ To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-creative-
 
 ### Change the hero background
 
-The hero acts as an eye-catcher for your site. So consider to give him a nice background. You just need to replace the [`header.jpg`](//github.com/digitalcraftsman/hugo-creative-theme/blob/master/static/img/header.jpg) at [`static/img`](//github.com/digitalcraftsman/hugo-creative-theme/tree/master/static/img) with your own. But it's important that you use the same filename.
+The hero acts as an eye-catcher for your site. So consider to give him a nice background. You just need to replace the [`header.png`](//github.com/digitalcraftsman/hugo-creative-theme/blob/master/static/img/header.png) at [`static/img`](//github.com/digitalcraftsman/hugo-creative-theme/tree/master/static/img) with your own. But it's important that you use the same filename.
 
 
 ### Add your services

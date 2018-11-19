@@ -43,7 +43,7 @@ Title = "Nanotale - Typing Chronicles"
 
 	# Hero section
 	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		# To change the background of the hero section, replace the 'header.png' at './static/img' with your own.
 		slogan     = ""
 		logo       = "logo.png"
 		subtitle   = ""
