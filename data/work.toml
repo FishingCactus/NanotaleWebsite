@@ -1,0 +1,7 @@
+# Section title
+title = "Video"
+
+[[projects]]
+    name = "Video"
+    folder = "video"
+

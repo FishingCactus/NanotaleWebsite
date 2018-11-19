@@ -1,0 +1,19 @@
+{{ "<!-- SUBSCRIBE -->" | safeHTML }}
+
+<div class="row" id="subscribe">
+    <div class="col-lg-6 col-lg-offset-3">
+        <form action="{{ .Site.Params.contact.subscribe.actionURL | absURL }}" method="post">
+            {{ with .Site.Params.contact.subscribe.description }}
+            <h3 class="text-align-center">{{ . | markdownify }}</h3>
+            {{ end }}
+            <p class="text-align-center">
+                {{ with .Site.Params.contact.subscribe.inputName }}
+                <input name="{{ . }}" type="email" required class="white-world" id="fieldEmail" placeholder="email@dot.com">
+                {{ end }}
+                {{ with .Site.Params.contact.subscribe.buttonText }}
+                <button class="btn btn-default btn-lg" type="submit"><span>{{ . | markdownify }}</span></button>
+                {{ end }}
+            </p>
+        </form>
+    </div>
+</div>

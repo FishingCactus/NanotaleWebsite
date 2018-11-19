@@ -1,0 +1,18 @@
+<section class="bg-primary black-world" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Data.projects.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Data.projects.headline .Site.Params.portfolio.description }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Data.projects.description }}
+                    <p class="text-faded">{{ . | markdownify }}</p>
+                {{ end }}
+                    <img src="img/logo_technobel.png" class="img-responsive"/>
+            </div>
+        </div>
+    </div>
+</section>

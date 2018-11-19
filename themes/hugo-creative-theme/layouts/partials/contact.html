@@ -1,0 +1,69 @@
+{{ "<!-- CONTACT -->" | safeHTML }}
+<section class="bg-secondary black-world" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 text-center">
+                {{ with .Site.Params.contact.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.contact.headline .Site.Params.contact.description }}
+                    <hr class="primary">
+                {{ end }}
+                {{ with .Site.Params.contact.description }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row">
+
+            {{ if .Site.Params.contact.twitter }}
+                <div class="col-xs-offset-2 col-xs-2 text-center">
+                    <a href="//twitter.com/{{ .Site.Params.contact.twitter }}" class="full-size inline-block">
+                    {{ if .Site.Params.contact.twitterSVG }}
+                    <img src="img/{{ .Site.Params.contact.twitterSVG }}" class="img-responsive"/>
+                    {{ else }}
+                    <i class="fa fa-twitter fa-3x wow bounceIn"></i>
+                    {{ end }}
+                    </a>
+                </div>
+            {{ end }}
+            {{ if .Site.Params.contact.facebook }}
+                <div class="col-xs-2 text-center">
+                    <a href="//facebook.com/{{ .Site.Params.contact.facebook }}" class="full-size inline-block">
+                    {{ if .Site.Params.contact.facebookSVG }}
+                    <img src="img/{{ .Site.Params.contact.facebookSVG }}" class="img-responsive"/>
+                    {{ else }}
+                    <i class="fa fa-facebook fa-3x wow bounceIn"></i>
+                    {{ end }}
+                    </a>
+                </div>
+            {{ end }}
+            {{ if .Site.Params.contact.discord }}
+                <div class="col-xs-2 text-center">
+                    <a href="//discord.gg/{{ .Site.Params.contact.discord }}" class="full-size inline-block">
+                    {{ if .Site.Params.contact.discordSVG }}
+                    <img src="img/{{ .Site.Params.contact.discordSVG }}" class="img-responsive"/>
+                    {{ else }}
+                    <i class="fa fa-comments fa-3x wow bounceIn"></i>
+                    {{ end }}
+                    </a>
+                </div>
+            {{ end }}
+            {{ if .Site.Params.contact.email }}
+                <div class="col-xs-2 text-center">
+                    <a href="mailto:{{ .Site.Params.contact.email }}" class="full-size inline-block">
+                    {{ if .Site.Params.contact.emailSVG }}
+                    <img src="img/{{ .Site.Params.contact.emailSVG }}" class="img-responsive"/>
+                    {{ else }}
+                    <i class="fa fa-envelope fa-3x wow bounceIn"></i>
+                    {{ end }}
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+        {{ if .Site.Params.contact.subscribe }}
+            {{ partial "subscribe_form.html" . }}
+        {{ end }}
+        
+    </div>
+</section>

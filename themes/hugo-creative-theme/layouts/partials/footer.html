@@ -1,0 +1,15 @@
+{{ "<!-- FOOTER -->" | safeHTML }}
+<footer class="bg-primary black-world" id="footer">
+    <div class="container">
+        
+        <div class="row">
+            
+            {{ with .Site.Params.footer.copyright }}
+            
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                    <span>{{ . | markdownify }}</span>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</footer>

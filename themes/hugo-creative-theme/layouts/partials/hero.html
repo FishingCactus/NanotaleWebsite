@@ -1,0 +1,48 @@
+{{ "<!-- HEADER -->" | safeHTML }}
+<header class="bg-secondary black-world">
+    {{ if and .Site.Params.hero.videoBG .Site.Params.hero.videoPoster }}
+        <video width="100%" class="header-video" src="video/{{ .Site.Params.hero.videoBG }}" autoplay loop poster="img/{{ .Site.Params.hero.videoPoster }}">
+        </video>
+    {{ else }}
+        {{ with .Site.Params.hero.videoBG }}
+        <video width="100%" class="header-video" src="video/{{ . }}" autoplay loop>
+        </video>
+        {{ end }}
+    {{ end }}
+    <div class="header-content">
+        <div class="header-content-inner">
+            {{ with .Site.Params.hero.logo }}
+                <img class="img-responsive" src="img/{{ . }}"/>
+            {{ end }}
+            {{range where .Site.Pages "Type" "=" "video"}}
+                    <div class="margin-bottom margin-top">{{ .Content }}</div>
+            {{ end }}
+            
+            {{ with .Site.Params.hero.slogan }}
+                <h1>{{ . | markdownify  }}</h1>
+            {{ end }}
+            {{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
+                <hr>
+            {{ end }}
+            {{ if and .Site.Params.hero.subtitle .Site.Params.hero.subtitle2 }}
+                {{ with .Site.Params.hero.subtitle }}
+                    <p>{{ . | markdownify }}<br>
+                {{ end }}
+                {{ with .Site.Params.hero.subtitle2 }}
+                    {{ . | markdownify }}</p>
+                {{ end }}
+            {{ else }}
+                {{ with .Site.Params.hero.subtitle }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+                {{ with .Site.Params.hero.subtitle2 }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+            {{ end }}
+            {{ with .Site.Params.hero.buttonText }}
+                
+                {{ end }}
+            <iframe src="https://store.steampowered.com/widget/944920/" frameborder="0" width="646" height="190"></iframe>
+        </div>
+    </div>
+</header>

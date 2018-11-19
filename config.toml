@@ -1,0 +1,75 @@
+baseurl = "./"
+languageCode = "en-us"
+theme = "hugo-creative-theme"
+googleAnalytics = "UA-2880668-17"
+
+# SEO IMPORTANT
+Title = "Nanotale - Typing Chronicles"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Nanotale - Typing Chronicles"
+	# SEO IMPORTANT
+	description = "Nanotale is the new adventure from the Typing Chronicles franchise and the spiritual successor to the acclaimed Epistory. Nanotale is currently in development at Fishing Cactus, the creator of Epistory - Typing Chronicles and Shift Quantum"
+	# The path must be relative to the static folder
+	favicon = "favicon2.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Nanotale - Typing Chronicles"
+
+		[params.navigation.links]
+			about     = ""
+			services  = ""
+			portfolio = ""
+			aside = ""
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = ""
+		logo       = "logo.png"
+		subtitle   = ""
+		buttonText = ""
+		videoBG = "header.mp4"
+		videoPoster = "header.png"
+
+	# Contact section
+	[params.contact]
+		headline = "GET IN TOUCH!"
+		description = "Join our [Discord](https://discord.gg/KqtBnHM) channel and chat in live with the team."
+		twitter = "Nanotalegame"
+		twitterSVG = "TW_icon.svg"
+		facebook = "Nanotalegame"
+		facebookSVG = "FB_icon.svg"
+		discord = "KqtBnHM"
+		discordSVG = "DIS_icon.svg"
+		email = "nanotale@fishingcactus.com"
+		emailSVG = "ML_icon.svg"
+
+		[params.contact.subscribe]
+			actionURL = "http://fishingcactusnews.createsend.com/t/d/s/ikdukk/"
+			description = "SUBSCRIBE TO OUR MAILING LIST BELOW"
+			inputName = "cm-ikdukk-ikdukk"
+			buttonText = "SUBSCRIBE"
+
+	# Footer section
+	[params.footer]
+		copyright = "Copyright - [Fishing Cactus](http://www.fishingcactus.com) 2017"

@@ -1,0 +1,25 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section class="bg-primary black-world" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Params.about.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.about.headline .Site.Params.about.description }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Params.about.description }}
+                    <p class="text-faded">{{ . | markdownify }}</p>
+                {{ end }}
+                    <img src="img/story2.png" class="img-responsive"/>
+                {{ with .Site.Params.about.buttonText }}
+                    <a href="#" class="btn btn-default btn-xl"><span>{{ . }}</span></a>
+                {{ end }}
+                {{ with .Site.Params.hero.buttonText }}
+                <a href="https://store.steampowered.com/app/944920/Nanotale__Typing_Chronicles/" class="btn btn-default btn-xl page-scroll"><span>{{ . }}</span></a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
