@@ -48,7 +48,7 @@ Title = "Nanotale - Typing Chronicles"
 		logo       = "logo.png"
 		subtitle   = ""
 		buttonText = ""
-		videoBG = "header.mp4"
+		videoBG = "header.webm"
 		videoPoster = "header.png"
 
 	# Contact section
@@ -69,6 +69,11 @@ Title = "Nanotale - Typing Chronicles"
 			description = "SUBSCRIBE TO OUR MAILING LIST BELOW"
 			inputName = "cm-ikdukk-ikdukk"
 			buttonText = "SUBSCRIBE"
+
+	# Portfolio section
+	[Data.projects]
+		headline = ""
+		europe = "logo_europe.png"
 
 	# Footer section
 	[params.footer]
