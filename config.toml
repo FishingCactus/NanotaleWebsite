@@ -49,7 +49,7 @@ Title = "Nanotale - Typing Chronicles"
 		subtitle   = ""
 		buttonText = ""
 		videoBG = "header.mp4"
-		videoPoster = ""
+		videoPoster = "header.jpg"
 
 	# About section
 	[params.about]
@@ -96,8 +96,9 @@ Title = "Nanotale - Typing Chronicles"
 	# Portfolio section
 	[Data.projects]
 		headline = ""
-		europe = "logo_europe.png"
+		
 
 	# Footer section
 	[params.footer]
-		copyright = ""
+		
+		
