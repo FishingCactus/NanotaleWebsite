@@ -1,5 +1,5 @@
 {{ "<!-- HEADER -->" | safeHTML }}
-<header class="bg-secondary black-world">
+<header class="">
     {{ if and .Site.Params.hero.videoBG .Site.Params.hero.videoPoster }}
         <video width="100%" class="header-video" src="video/{{ .Site.Params.hero.videoBG }}" autoplay loop poster="img/{{ .Site.Params.hero.videoPoster }}">
         </video>
@@ -14,9 +14,7 @@
             {{ with .Site.Params.hero.logo }}
                 <img class="img-responsive" src="img/{{ . }}"/>
             {{ end }}
-            {{range where .Site.Pages "Type" "=" "video"}}
-                    <div class="margin-bottom margin-top">{{ .Content }}</div>
-            {{ end }}
+            
             
             {{ with .Site.Params.hero.slogan }}
                 <h1>{{ . | markdownify  }}</h1>

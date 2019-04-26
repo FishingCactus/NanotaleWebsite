@@ -8,7 +8,7 @@
             {{ end }}
             <p class="text-align-center">
                 {{ with .Site.Params.contact.subscribe.inputName }}
-                <input name="{{ . }}" type="email" required class="white-world" id="fieldEmail" placeholder="email@dot.com">
+                <input name="{{ . }}" type="email" required class="" id="fieldEmail" placeholder="email@dot.com">
                 {{ end }}
                 {{ with .Site.Params.contact.subscribe.buttonText }}
                 <button class="btn btn-default btn-lg" type="submit"><span>{{ . | markdownify }}</span></button>

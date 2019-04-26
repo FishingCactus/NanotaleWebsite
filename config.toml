@@ -34,10 +34,10 @@ Title = "Nanotale - Typing Chronicles"
 		brand = "Nanotale - Typing Chronicles"
 
 		[params.navigation.links]
-			about     = ""
-			services  = ""
+			about     = "About"
+			services  = "Screenshots"
 			portfolio = ""
-			aside = ""
+			aside = "Presskit"
 			contact   = "Contact"
 
 
@@ -48,21 +48,44 @@ Title = "Nanotale - Typing Chronicles"
 		logo       = "logo.png"
 		subtitle   = ""
 		buttonText = ""
-		videoBG = "header.webm"
-		videoPoster = "header.png"
+		videoBG = "header.mp4"
+		videoPoster = ""
+
+	# About section
+	[params.about]
+		headline    = "Nanotale - Typing Chronicles"
+		description = "Something is wrong with the heart of magic. Play a young archivist venturing out into a dying world, cataloging its mysteries and its wonders to unearth the truth. Nanotale is the new adventure from the Typing Chronicles franchise and the spiritual successor to the acclaimed [Epistory](https://store.steampowered.com/app/398850/Epistory__Typing_Chronicles/)."
+		
+		# video: Video can be set by adding a video.md in content file.
+		# buttonText  = "OMG THIS IS AWESOME"
+
+
+	# Service section
+	[params.services]
+		headline = "SCREENSHOTS"
+		gallery = "true"
+
+
+    # Aside section
+	[params.aside]
+		headline = "PRESSKIT"
+
+		[params.aside.button]
+			text = "Download now"
+			link = "https://drive.google.com/open?id=1bvkHfgegGRb29cqfLkOVEdXte2cHH6Fe"
 
 	# Contact section
 	[params.contact]
 		headline = "GET IN TOUCH!"
 		description = "Join our [Discord](https://discord.gg/KqtBnHM) channel and chat in live with the team."
 		twitter = "Nanotalegame"
-		twitterSVG = "TW_icon.svg"
+		twitterSVG = "TW_icon.png"
 		facebook = "Nanotalegame"
-		facebookSVG = "FB_icon.svg"
+		facebookSVG = "FB_icon.png"
 		discord = "KqtBnHM"
-		discordSVG = "DIS_icon.svg"
+		discordSVG = "DIS_icon.png"
 		email = "nanotale@fishingcactus.com"
-		emailSVG = "ML_icon.svg"
+		emailSVG = "ML_icon.png"
 
 		[params.contact.subscribe]
 			actionURL = "http://fishingcactusnews.createsend.com/t/d/s/ikdukk/"
@@ -77,4 +100,4 @@ Title = "Nanotale - Typing Chronicles"
 
 	# Footer section
 	[params.footer]
-		copyright = "Copyright - [Fishing Cactus](http://www.fishingcactus.com) 2017"
+		copyright = ""

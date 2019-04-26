@@ -1,5 +1,5 @@
 {{ "<!-- ABOUT -->" | safeHTML }}
-<section class="bg-primary black-world" id="about">
+<section class="" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -12,7 +12,9 @@
                 {{ with .Site.Params.about.description }}
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
-                    
+                {{range where .Site.Pages "Type" "=" "video"}}
+                    <div class="margin-bottom margin-top">{{ .Content }}</div>
+                {{ end }}   
                 {{ with .Site.Params.about.buttonText }}
                     <a href="#" class="btn btn-default btn-xl"><span>{{ . }}</span></a>
                 {{ end }}
