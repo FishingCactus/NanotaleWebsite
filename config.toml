@@ -97,8 +97,14 @@ Title = "Nanotale - Typing Chronicles"
 	[Data.projects]
 		headline = ""
 		
+		
+		
 
 	# Footer section
 	[params.footer]
+		copyright= ""
+		fishing = "logo_fishingcactus.png"
+		europe = "logo_europe.png"
+		
 		
 		
