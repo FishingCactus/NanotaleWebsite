@@ -1,28 +1,25 @@
 {{ "<!-- FOOTER -->" | safeHTML }}
 <footer class="" id="footer">
     <div class="container">
-        
-        <div class="row">
-            {{ if .Site.Params.footer.fishing }}
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <a href="http://http://www.fishingcactus.com/" class="full-size inline-block">
-                    {{ if .Site.Params.contact.facebookSVG }}
-                    <img src="img/logo_fishingcactus.png" class="img-responsive"/>
-                    {{ end }}
-                    </a>
-                </div>
-            {{ end }}
-            {{ if .Site.Params.footer.europe }}
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <a href="https://eacea.ec.europa.eu/europe-creative/media_fr" class="full-size inline-block">
-                    {{ if .Site.Params.contact.discordSVG }}
-                    <img src="img/logo_europe.png" class="img-responsive"/>
-                    {{ end }}
-                    </a>
-                </div>
-            {{ end }}
-            {{ with .Site.Params.footer.copyright }}
-            {{ end }}
-        </div>
+        {{ if .Site.Params.footer.fishing }}
+            <div class="text-center">
+                <a href="http://www.fishingcactus.com/" class="inline-block">
+                {{ if .Site.Params.contact.facebookSVG }}
+                <img src="img/logo_fishingcactus.png" class="img-responsive"/>
+                {{ end }}
+                </a>
+            </div>
+        {{ end }}
+        {{ if .Site.Params.footer.europe }}
+            <div class="text-center">
+                <a href="https://eacea.ec.europa.eu/europe-creative/media_fr" class="inline-block">
+                {{ if .Site.Params.contact.discordSVG }}
+                <img src="img/logo_europe.png" class="img-responsive"/>
+                {{ end }}
+                </a>
+            </div>
+        {{ end }}
+        {{ with .Site.Params.footer.copyright }}
+        {{ end }}
     </div>
 </footer>

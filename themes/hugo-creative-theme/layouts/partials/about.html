@@ -14,12 +14,12 @@
                 {{ end }}
                 {{range where .Site.Pages "Type" "=" "video"}}
                     <div class="margin-bottom margin-top">{{ .Content }}</div>
-                {{ end }}   
+                {{ end }}
                 {{ with .Site.Params.about.buttonText }}
                     <a href="#" class="btn btn-default btn-xl"><span>{{ . }}</span></a>
                 {{ end }}
                 {{ with .Site.Params.hero.buttonText }}
-                <a href="https://store.steampowered.com/app/944920/Nanotale__Typing_Chronicles/" class="btn btn-default btn-xl page-scroll"><span>{{ . }}</span></a>
+                <a href="https://store.steampowered.com/app/944920/Nanotale__Typing_Chronicles/" class="btn btn-default btn-xl page-scroll steam-widget"><span>{{ . }}</span></a>
                 {{ end }}
             </div>
         </div>

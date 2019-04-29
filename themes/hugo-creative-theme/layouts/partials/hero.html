@@ -14,8 +14,8 @@
             {{ with .Site.Params.hero.logo }}
                 <img class="img-responsive" src="img/{{ . }}"/>
             {{ end }}
-            
-            
+
+
             {{ with .Site.Params.hero.slogan }}
                 <h1>{{ . | markdownify  }}</h1>
             {{ end }}
@@ -38,9 +38,9 @@
                 {{ end }}
             {{ end }}
             {{ with .Site.Params.hero.buttonText }}
-                
+
                 {{ end }}
-            <iframe src="https://store.steampowered.com/widget/944920/" frameborder="0" width="646" height="190"></iframe>
+            <iframe src="https://store.steampowered.com/widget/944920/" frameborder="0" width="646" height="190" class="steam-widget"></iframe>
         </div>
     </div>
 </header>
